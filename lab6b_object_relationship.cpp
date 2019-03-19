@@ -129,6 +129,11 @@ int getDoors() {return numOfDoors;}
 
 int main()
 {
+	string name;
+	cout << "Testing Aggregation" << endl;
 	
+	Employee *employee = new Employee("Sarah");
+	{Company comp(employee);}
+	cout << employee->getName() << " is the teacher." << endl;
  return 0;
 }
